@@ -12,13 +12,13 @@ readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-piston_window = "0.120.0"
+piston_window = "0.132.0"
 
 [dependencies.plotters-backend]
 git = "https://github.com/plotters-rs/plotters"
 
 [dev-dependencies]
-systemstat = "0.1.5"
+systemstat = "0.2.4"
 
 [dev-dependencies.plotters]
 default_features = false
