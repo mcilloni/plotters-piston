@@ -2,7 +2,7 @@
 name = "plotters-piston"
 version = "0.3.0"
 authors = ["Hao Hou <haohou302@gmail.com>"]
-edition = "2018"
+edition = "2021"
 license = "MIT"
 description = "Plotters Piston Window Backend"
 homepage = "https://plotters-rs.github.io"
@@ -13,14 +13,8 @@ readme = "README.md"
 
 [dependencies]
 piston_window = "0.132.0"
-
-[dependencies.plotters-backend]
-git = "https://github.com/plotters-rs/plotters"
+plotters = { version = "0.3.0", default-features = false, features = ["ttf", "all_series"] }
+plotters-backend = "0.3.7"
 
 [dev-dependencies]
 systemstat = "0.2.4"
-
-[dev-dependencies.plotters]
-default_features = false
-features = ["ttf", "all_series"]
-git = "https://github.com/plotters-rs/plotters"
